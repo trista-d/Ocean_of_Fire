@@ -1,0 +1,376 @@
+h3, #instructionsText, #support {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align:center;
+  font-weight:bold;
+  font-size:50px;
+  margin:0px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+h3 {
+  text-align:center;
+  text-align:center;
+  font-size:30px;
+}
+
+#endTitle {
+  font-size:70px;
+}
+
+#endText {
+  position:relative;
+  top:400px;
+}
+    
+#winScreen {
+  display:none;
+  width:1080px;
+  height:720px;
+  border:thick solid black;
+  margin-right:auto;
+  margin-left:auto;
+}
+#startText {
+  font-size:50px;  
+  text-align:center;
+  margin-top:60px;
+  color:black;
+  text-shadow:2px 2px white;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+#selection {
+  display:none;
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  width:1080px;
+  height:720px;
+  border:thick solid black;
+  background-color:#003366;
+  color:white;
+}
+
+#brown {
+  position:relative;
+  left:-25px;
+  top:150px;
+}
+
+#black {
+  position:relative;
+  left:60px;
+  top:150px;
+}
+
+#gray {
+  position:relative;
+  left:160px;
+  top:150px;
+}
+
+#golden {
+  position:relative;
+  left:260px;
+  top:150px;
+}
+
+#horse {
+  z-index:5;
+  width:211px;
+  height:150px;
+  position:absolute;
+  top:1px;
+  left:50px;
+  display:none;
+}
+
+#background {
+  display:none;
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  width:1080px;
+  height:720px;
+  background-image:url("images/sand.png");
+  z-index:0;
+}
+
+#gameOver {
+  width:1080px;
+  height:720px;
+  background-color:black;
+  display:none;
+  color:white;
+}
+#container {
+  width:1080px;
+  height:720px;
+  background-image:url("images/desert.png");
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  border:thick solid black;
+}
+
+#shield {
+  width:1080px;
+  height:720px;
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  display:none;
+  border:thick solid black;
+  overflow:hidden;
+}
+
+#play {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:175px;
+ -webkit-transition:0.5s;
+  transition:0.5s;
+}
+
+#play, #instructions, #credits {
+   -webkit-transition:0.2s;
+  transition:0.2s;
+}
+
+#play:hover, #instructions:hover, #credits:hover {
+  -webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+}
+
+#instructions {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:200px;
+}
+
+#credits {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:225px;
+}
+
+.button {
+  background-color:#003366;
+  width:200px;
+  height:50px;
+  color:white;
+  text-align:center;
+  font-size:30px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.button:hover {
+  cursor:pointer;
+  background-color:#004d99;
+  color:black;
+}
+
+.backButton:hover {
+  cursor:pointer;
+}
+
+.backButton {
+  height:40px;
+  width:40px;
+}
+
+#instructionsScreen {
+  display:none;
+  width:1080px;
+  height:720px;
+  margin-right:auto;
+  margin-left:auto;
+  background-image:url("images/desert.png");
+  border:thick solid black;
+}
+
+.howToPlay {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:60px;
+  width:700px;
+  height:600px;
+  border:thick solid black;
+  background-color:rgba(0,51,102,0.9);
+  color:white;
+}
+
+#lvl_2 {
+  position:absolute;
+  top:20px;
+  left:7000px;
+  z-index:7;  
+}
+
+#creditScreen {
+  margin-right:auto;
+  margin-left:auto;
+  width:1080px;
+  height:720px;
+  display:none;
+  border:thick solid black;
+  background-image:url('images/desert.png');
+}
+
+#selectionBack {
+  position:relative;
+  top:350px;
+}
+
+#creditBack {
+  position:relative;
+  top:680px;
+}
+
+#lvl_3 {
+  position:absolute;
+  top:20px;
+  left:18955px;
+  z-index:7;  
+}
+
+#heart1 {
+  position:absolute;
+  top:10px;
+  right:124px;
+  z-index:7;  
+}
+
+#heart2 {
+  position:absolute;
+  top:10px;
+  right:67px;
+  z-index:7;
+}
+
+#heart3 {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:7;  
+}
+
+#brown:hover, #black:hover, #gray:hover, #golden:hover {
+  cursor:pointer;   
+}
+
+#instructionsText {
+  margin-left:10px;
+  margin-right:10px;
+  font-size:25px;
+}
+
+#instructionsBack {
+  position:relative;
+  top:5px;
+}
+
+#continue {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:400px;
+}
+
+a {
+  color:white;
+  text-decoration:none;
+    
+}
+
+#horseSource {
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#obstaclesSource {
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    top:50px;
+}
+
+#rotationSource {
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    top:100px;
+}
+
+#musicSource {
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    top:150px;
+}
+
+#heartSource {
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    top:200px;
+}
+
+#creditBack {
+  position:relative;
+  top:180px;
+}
+
+#brownH3 {
+  display:none;
+  position:absolute;
+  top:450px;
+  left:30px;
+}
+
+#blackH3 {
+  display:none;
+  position:absolute;
+  top:450px;
+  left:290px;
+}
+
+#grayH3 {
+  display:none;
+  position:absolute;
+  top:450px;
+  left:625px;
+}
+
+#goldenH3 {
+  display:none;
+  position:absolute;
+  top:450px;
+  left:948px;
+}
+
+#lvl_2, #lvl_3 {
+  z-index:4;
+}
+
+#support {
+  position:relative;
+  top:375px;
+  left:5px;
+  font-size:15px;
+}
+
+#continueWin {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  top:0px;
+}

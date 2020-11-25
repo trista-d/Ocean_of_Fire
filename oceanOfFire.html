@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Ocean of Fire</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="oceanOfFire.css">
+	<link rel='icon' href='images/favicon.png'/>
+	<script src="oceanOfFire.js"></script> 	
+  </head>
+  
+  <body>
+	<audio id="desertMusic" src="desertMusic.mp3"></audio>
+	<div id="container">
+
+	<br><br><br><div id="startText">The Ocean of Fire</div>
+
+	<div id="play" class="button" onclick="changeScreen(1)">
+		Play
+	</div>
+	
+		<div id="instructions" class="button" onclick="changeScreen(2)">
+		Instructions
+	</div>
+	
+	
+	<div id="credits" class="button" onclick="changeScreen(3)">
+		Credits
+	</div>
+    <div id="support">This game is compatible with Chrome, Edge, IE, Firefox, and Opera</div>
+	</div>
+	
+	<div id="instructionsScreen">
+	<div class="howToPlay">
+ 
+    <br><h1>How to Play</h1><br><br>
+	<p id="instructionsText">
+	You are participating in the most prestigious horse race ever known to exist:
+    the Ocean of Fire. This race will take place over the span of three days, each becoming more
+    difficult to succeed. Avoid prickly cacti, rough bramble, and poisonous scorpions, as these
+    can cause your horse harm.
+	<br><br>
+	Use the arrow keys to avoid obstacles. Hitting an obstacle will result in you losing a life. 
+    If you lose three lives your horse will be incapacitated and therefore eliminated from the race!
+	</p>
+    <div class="backButton" id="instructionsBack" onclick="backButton(1)">
+	<img src="images/back.png" alt="Back">
+	</div>
+    </div>
+
+	</div>
+	<div id="selection">
+    <h1>Character Selection</h1>
+    
+    <h3>Click on the horse you want to play as</h3>
+      <img id="brown" onclick="chooseAvatar(0)" onmouseover="displayNames(0)" onmouseout="hideNames(0)" src="images/brown.png" alt="Brown Horse"><h3 id="brownH3">Epona</h3>
+      <img id="black" onclick="chooseAvatar(1)" onmouseover="displayNames(1)" onmouseout="hideNames(1)" src="images/black.png" alt="Black Horse"> <h3 id="blackH3">Black Caviar</h3>
+      <img id="gray" onclick="chooseAvatar(2)" onmouseover="displayNames(2)" onmouseout="hideNames(2)" src="images/gray.png" alt="Gray Horse"> <h3 id="grayH3">Subzero</h3>
+      <img id="golden" onclick="chooseAvatar(3)" onmouseover="displayNames(3)" onmouseout="hideNames(3)" src="images/golden.png" alt="golden Horse"><h3 id="goldenH3">Hidalgo</h3>
+      
+      <div class="backButton" id="selectionBack" onclick="backButton(3)">
+	    <img src="images/back.png" alt="Back">
+	  </div>
+    </div>
+    <div id="creditScreen">
+    
+      <div class="howToPlay">
+      <br><h1>Credits</h1><br><br>
+        <div class="button" id="horseSource"><a href="https://opengameart.org/content/lpc-horses">Horse Art</a></div>
+        <div class="button" id="obstaclesSource"><a href="https://opengameart.org/content/8x8px-sand-cacti-scorpion-tileset">Sand/obstacles</a></div>
+         <div class="button" id="rotationSource"><a href="https://codepen.io/Levi/pen/htqxs">CSS rotation</a></div>
+         <div class="button" id="musicSource"><a href="https://opengameart.org/content/desertmystic-dynastic-egyptian-theme-cc0">Music</a></div>
+		  <div class="button" id="heartSource"><a href="https://opengameart.org/content/animated-lives">Hearts</a></div>
+      <div class="backButton" id="creditBack" onclick="backButton(2)">
+	    <img src="images/back.png" alt="Back">
+        </div>
+	  </div>
+    </div>
+	
+	<div id="winScreen">
+	<br><br>
+    <h1 id="endTitle">You won!</h1>
+	<div id="endText">
+    <h3 id="winners">You and </h3>
+	<div id="continueWin" class="button" onclick="home()">
+		Continue
+	</div>
+    </div>
+	</div>
+	<div id="shield">
+	<div id="gameOver"><h1>Game Over</h1><br><br><h3>You have been eliminated from the race!</h3>
+    	<div id="continue" class="button" onclick="home()">
+		Continue
+	</div>
+    </div>
+	<img id="heart1" src="images/fullHearts.png" alt="Heart">
+	<img id="heart2" src="images/fullHearts.png" alt="Heart">
+	<img id="heart3" src="images/fullHearts.png" alt="Heart">
+    <div id="background">
+	<br><h1>LEVEL ONE</h1><br><h3 id="lvlText">Press space to begin</h3>
+	</div>
+    
+	<div id="horse"><img id="player" src="images/Brownhorse.gif" alt="Horse"></div>
+	</div>
+  </body>
+  
+</html>
